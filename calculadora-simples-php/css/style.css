@@ -1,0 +1,112 @@
+
+#form{
+    width: inherit;
+    height: 400px;
+    width: 500px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+}
+
+input{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#resultado{
+    width: 425px;
+    height: 300px;
+    margin-top: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 2px;
+    font-family: Giz;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    float: left;
+    color: #fff;
+}
+
+#container-opcoes{
+    width: 35%;
+    height: 100%;
+    text-align: left;
+    color: #fff;
+    font-size: 30px;
+    font-family: Giz;
+    letter-spacing: 3px;
+    padding-top: 30px;
+    /* background-color: rebeccapurple; */
+}
+
+.informacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Giz;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 30px;
+    /* background-color: tomato; */
+}
+
+.informacao label {
+    width: 130px;
+    height: 35px;
+    text-align: center;
+}
+
+.informacao input {
+    background-color: #455E5E;
+    height: 40px;
+    border: dashed 2px #fff;
+    outline: none;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+#container-formulario:nth-child(2) {
+    margin-top: 20px;
+}
+
+#container-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+#container-input {
+    height: 100%;
+    width: 65%;
+}
+
+#container-configuracoes {
+    display: flex;
+    width: 100%;
+    height: 40%;
+}
+
+#botao-calculadora-simples {
+    margin-top: 50px;
+    height: 50px;
+    width: 425px;
+    font-family: Giz;
+    font-size: 30px;
+    letter-spacing: 3px;
+    background: none;
+    color: #fff;
+    border: solid 2px #fff;
+    cursor: pointer;
+}
+
+#botao-calculadora-simples:hover {
+    transition: 0.25s;
+    background-color: #24383A;
+}
+
