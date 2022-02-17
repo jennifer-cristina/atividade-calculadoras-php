@@ -31,7 +31,7 @@ if (isset($_POST['btnCalc'])) {
             echo (ERRO_MSG_CARACTER_INVALIDO_TEXTO);
         } else {
             // Realizando o calculo da Média
-            resultadoMedia($nota1, $nota2, $nota3, $nota4);
+            $media = resultadoMedia($nota1, $nota2, $nota3, $nota4);
         }
     }
 }
@@ -44,7 +44,7 @@ if (isset($_POST['btnCalc'])) {
 <head>
     <title>Média</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="../style.css">k
+    <link rel="stylesheet" href="../style.css">
     <script src="../main.js" defer></script>
     <meta charset="utf-8">
 </head>
@@ -64,7 +64,7 @@ if (isset($_POST['btnCalc'])) {
 
                     <nav id="nav">
                         <ul id="menu">
-                            <li><a href="calculadora-simples-php/calculadora_simples.php">Calculadora simples</a></li>
+                            <li><a href="calculadora_simples.php">Calculadora simples</a></li>
                             <li><a href="formulario-media/media.php">Calculadora Média</a></li>
                             <li><a href="tabuada/tabuada.php">Tabuada</a></li>
                             <li><a href="pares-impar/pares-impar.php">Pares e impar</a></li>
@@ -74,39 +74,47 @@ if (isset($_POST['btnCalc'])) {
                 <div id="container-conteudo">
                     <div id="form">
                         <form name="frmMedia" method="post" action="media.php">
-                            <div>
-                                <label>Nota 1:</label>
-                                <input type="text" name="txtn1" value="<?php echo ($nota1); ?>">
-                            </div>
+                            <div id="container-configuracoes">
+                                <div id="container-informacao">
+                                    <div class="informacao">
+                                        <label>Nota 1:</label>
+                                        <input id="input-informacao" autocomplete="off" type="text" name="txtn1" value="<?php echo ($nota1); ?>">
+                                    </div>
 
-                            <div>
-                                <label>Nota 2:</label>
-                                <input type="text" name="txtn2" value="<?php echo ($nota2); ?>">
-                            </div>
+                                    <div class="informacao">
+                                        <label>Nota 2:</label>
+                                        <input id="input-informacao" autocomplete="off" type="text" name="txtn2" value="<?php echo ($nota2); ?>">
+                                    </div>
 
-                            <div>
-                                <label>Nota 3:</label>
-                                <input type="text" name="txtn3" value="<?php echo ($nota3); ?>">
-                            </div>
+                                    <div class="informacao">
+                                        <label>Nota 3:</label>
+                                        <input id="input-informacao" autocomplete="off" type="text" name="txtn3" value="<?php echo ($nota3); ?>">
+                                    </div>
 
-                            <div>
-                                <label>Nota 4:</label>
-                                <input type="text" name="txtn4" value="<?php echo ($nota4); ?>">
-                            </div>
-                            <div>
-                                <input type="submit" name="btnCalc" value="Calcular">
-                                <div id="botaoReset">
-                                    <a href="media.php">
-                                        Novo Cálculoo
-                                    </a>
+                                    <div class="informacao">
+                                        <label>Nota 4:</label>
+                                        <input id="input-informacao" autocomplete="off" type="text" name="txtn4" value="<?php echo ($nota4); ?>">
+                                    </div>
+                                </div>
+
+                                <div id="container-resultado">
+                                    <div id="container-botoes">
+                                        <input id="botao-formulario-media" type="submit" name="btnCalc" value="Calcular">
+                                        <div id="botao-reset">
+                                            <a href="media.php">
+                                                Novo Cálculo
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="resultado">
+                                        A média é: <?php echo ($media); ?>
+                                    </div>
                                 </div>
                             </div>
                         </form>
 
                     </div>
-                    <footer id="resultado">
-                        A média é: <?php echo ($media); ?>
-                    </footer>
+
                 </div>
             </div>
         </div>

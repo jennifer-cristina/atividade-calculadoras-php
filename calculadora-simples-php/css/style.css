@@ -58,7 +58,7 @@ input{
     text-align: center;
 }
 
-.informacao input {
+#input-informacao {
     background-color: #455E5E;
     height: 40px;
     border: dashed 2px #fff;

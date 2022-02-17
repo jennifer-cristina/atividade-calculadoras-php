@@ -88,8 +88,8 @@ if (isset($_POST['btncalc'])) {
 						<form id="container-formulario" name="frm-calculadora" method="POST" action="calculadora_simples.php">
 							<div id="container-configuracoes">
 								<div id="container-input">
-									<div class="informacao"> <label>Valor 1:</label> <input type="text" name="txtn1" autocomplete="off" value="<?= $valor1; ?>"> </div>
-									<div class="informacao"> <label>Valor 2:</label><input type="text" name="txtn2" autocomplete="off" value="<?= $valor2; ?>"> </div>
+									<div class="informacao"> <label>Valor 1:</label> <input id="input-informacao" type="text" name="txtn1" autocomplete="off" value="<?= $valor1; ?>"> </div>
+									<div class="informacao"> <label>Valor 2:</label><input id="input-informacao" type="text" name="txtn2" autocomplete="off" value="<?= $valor2; ?>"> </div>
 
 								</div>
 								<div id="container-opcoes">
