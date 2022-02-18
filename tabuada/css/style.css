@@ -2,17 +2,14 @@
     margin-left: 20px;
     width: 500px;
     height: 400px;
-    /* background-color: tomato; */
 }
 
 #container-informacao {
     width: 400px;
     height: 400px;
-    /* background-color: cadetblue; */
 }
 
 #container-informacao label {
-    /* background-color: tomato; */
     width: 250px;
     height: 35px;
     text-align: center;

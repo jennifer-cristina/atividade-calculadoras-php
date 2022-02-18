@@ -11,18 +11,17 @@
 
 body {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    background-color: rgb(212, 206, 206);
-}
+    background-color: #F0EFEB;}
 
 #container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    height: 645px;
+    width: 1000px;
     background-color: #F0EFEB;
 }
 
@@ -53,8 +52,7 @@ body {
     position: absolute;
     overflow: hidden;
     bottom: -0px;
-    right: 0px;
-    /* background-color: #F0EFEB; */
+    right: -100px;
     height: 400px;
     width: 500px;
 }
@@ -80,8 +78,9 @@ body {
     width: 300px;
     position: absolute;
     margin-top: 30px;
-    right: 300px;
-    top: 350px;
+    right: 150px;
+    top: 100px;
+    z-index: 99;
 }
 
 #container-balao:after{ 

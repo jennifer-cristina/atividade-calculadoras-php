@@ -64,10 +64,10 @@ if (isset($_POST['btnCalc'])) {
 
                     <nav id="nav">
                         <ul id="menu">
-                            <li><a href="calculadora_simples.php">Calculadora simples</a></li>
-                            <li><a href="formulario-media/media.php">Calculadora Média</a></li>
-                            <li><a href="tabuada/tabuada.php">Tabuada</a></li>
-                            <li><a href="pares-impar/pares-impar.php">Pares e impar</a></li>
+                            <li><a href="../calculadora-simples-php/calculadora_simples.php">Calculadora simples</a></li>
+                            <li><a href="#">Calculadora Média</a></li>
+                            <li><a href="../tabuada/tabuada.php">Tabuada</a></li>
+                            <li><a href="../pares-impar/pares-impar.php">Pares e impar</a></li>
                         </ul>
                     </nav>
                 </div>
